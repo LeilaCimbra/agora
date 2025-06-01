@@ -1,0 +1,95 @@
+.pagina_gerenciamento .sidebar a[href="gerenciamento.html"]{
+  background-color: var(--color-terciary);
+}
+
+main{
+  height: 100vh;
+  margin: 0 auto;
+  padding-left: 34.633rem;
+  background-image: url(assets/image/background_registrar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title_page {
+  display: flex;
+  justify-content: center;
+}
+.title_page h1 {
+  font-family: Montserrat;
+  font-weight: var(--font-weight-bold);
+  font-size: 5rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+  padding: 7rem;
+}
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/image/Man\ hand\ picking\ books\ from\ the\ shelf.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 19rem;
+  margin-bottom: 4rem;
+}
+.register a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: var(--font-weight-bold);
+  font-size: 8rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+  z-index: 1;
+}
+.capa_register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 27.4rem;
+  width: 82%;
+  height: 19.1rem;
+  background: linear-gradient(92.33deg, rgba(0, 0, 0, 0.45) 29.72%, rgba(57, 8, 8, 0.3) 100%);
+  transition: background 0.4s ease-out;
+}
+.capa_register:hover {
+  background: linear-gradient(92.33deg, rgba(0, 0, 0, 0.68) 29.72%, rgba(57, 8, 8, 0.68) 100%);
+}
+.remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/image/Woman\ handling\ belongings\ in\ cardboard\ boxes\ for\ moving\ in\ new\ house.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 19rem;
+}
+.remove a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: var(--font-weight-bold);
+  font-size: 8rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+  z-index: 1;
+}
+.capa_remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50.4rem;
+  width: 82%;
+  height: 19.1rem;
+  background: linear-gradient(92.33deg, rgba(0, 0, 0, 0.45) 29.72%, rgba(57, 8, 8, 0.3) 100%);
+  transition: background 0.4s ease-out;
+}
+.capa_remove:hover {
+  background: linear-gradient(92.33deg, rgba(0, 0, 0, 0.68) 29.72%, rgba(57, 8, 8, 0.68) 100%);
+}

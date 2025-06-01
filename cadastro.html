@@ -3,9 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="cadastro.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/made-tommy-soft-outline " rel="stylesheet">
+  <title>Cadastro de Usuário</title>
 </head>
-<body>
-  <h1> CADASTRAR USUÁRIOS</h1>
+  <!-- A página HOME é a principal do sistema. Dela todas as outras se ramificam -->
+<body class="pagina_cadastro">
+
+<!--
+  O Header é o menu de navegação superior fixo para todas as páginas.
+  Coloquei um dropdown em algumas partes, mas futuramente a interações serão em JS. 
+  -->
+
+  <header>
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder= "Pesquise seu livro aqui"
+    >
+    <div class="profile">
+        <div class="dropdown_wrapper">
+          <div>
+          <img
+          src="assets/icons/sino.svg" alt="Ícone de sino">
+          </div>
+          <div class="notifications">
+            <a 
+            href="#notificacoes">
+            Você tem 2 notifications
+            </a>
+          </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <img 
+        class="avatar"
+        src="assets/image/carlos.svg" alt="Foto do usuário">
+        <div class="dropdown_avatar">
+        <a href="#alterarAvatar">Alterar Avatar</a>
+        </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <span 
+        class="user_name">
+        Carlos
+        </span>
+        <div 
+          class="dropdown_menu">
+          <a href="#editarPerfil">Editar Perfil</a>
+          <a href="#configuracoes">Configurações</a>
+          <a href="#sair">Sair</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 
+    O Sidebar é o menu de navegação lateral que se repete em todas as páginas. 
+    Usei action nos forms e <a> estilizado pra vincular páginas, por enquanto. 
+  -->
+  <section class="sidebar">
+    <div class="soon">
+    <img src="assets/image/logo-sidebar.svg" alt="Logo Ágora">
+    <a href="dashboard.html">ÁGORA</a>
+  </div>
+  <ul>
+    <li>
+      <a href="consultar_livros.html">
+        <img 
+        src="assets/icons/consulta.svg" 
+        alt="Ícone de Lupa">
+        Consultar Livro
+      </a>
+    </li>
+    <li> 
+      <a href="emprestimo.html">
+        <img 
+        src="assets/icons/emprestimo.svg" 
+        alt="Ícone de Capelo ">
+        Empréstimo
+      </a>
+    </li>
+    <li> 
+      <a href="gerenciamento.html">
+        <img 
+        src="assets/icons/gerenciamento.svg" alt="Ícone de Gerenciamento ">
+        Gerenciamento de Livros
+      </a>
+    </li>
+    <li> 
+      <a href="cadastro.html">
+        <img 
+      src="assets/icons/cadastro.svg" 
+      alt="Ícone de usuário">
+      Cadastrar Usuários
+      </a>
+    </li>
+    <li>
+      <a href="devolucao.html">
+        <img 
+        src="assets/icons/devolucao.svg" 
+        alt="Ícone de devolução">
+        Devolução
+      </a>
+    </li>
+    <li>
+      <a href="consulta_usuario.html">
+        <img 
+        src="assets/icons/consulta-usuario.svg" alt="Ícone de consulta de usuário">
+        Consultar Usuário
+      </a>
+    </li>
+    <li>
+      <a href="relatorios.html">
+        <img 
+        src="assets/icons/relatorios.svg" 
+        alt="Ícone de relatórios">
+        Relatórios
+      </a>
+    </li>
+  </ul>
+  <div class="edge"></div>
+  <ul class="link_last">
+    <li>
+      <a href="configuracao.html">
+        <img 
+        src="assets/icons/configuracao.svg" 
+        alt="Ícone de configuração">
+        Configurações
+      </a>
+    </li>
+    <li>
+      <a href="suporte.html">
+        <img 
+        src="assets/icons/suporte.svg" 
+        alt="Ícone de suporte">
+        Suporte
+      </a>
+    </li>
+    <li>
+      <a href="sair.html">
+        <img 
+        src="assets/icons/sair.svg" 
+        alt="ícone de saida">
+        Sair
+      </a>
+    </li>
+  </ul>
+  </section>
+
+  <main>
+
+    <h1>Gerenciamento de Usuários</h1>
+    <section class="manage">
+      <a 
+        class="manage_cards"
+        href="cadastrar_administrador.html">
+        <img src="assets/image/cadastrar_adm.svg" alt="Imagem de boneco com sinal de mais">
+        Cadastrar Administrador
+      </a>
+
+      <a 
+        class="manage_cards"
+        href="cadastrar_usuario.html">
+        <img src="assets/image/cadastrar_usuarios.svg" alt="Imagem de boneco com sinal de mais">
+        Cadastrar Usuário
+      </a>
+      
+    </section>
+    <section class="manage">
+      <a 
+        href="editar_usuario.html"
+        id="last" 
+        class="manage_cards">
+        <img src="assets/image/editar_usuario.svg" alt="Imagem de um quadrado com lápis">
+        Editar Usuário
+      </a>
+      
+      <a 
+        href="excluir_usuario.html"
+        id="last" 
+        class="manage_cards">
+        <img src="assets/image/excluir_usuario.svg" alt="Imagem de uma lixeira">
+        Excluir Usuário
+      </a>
+    </section>
+
+  </main>
 </body>
 </html>

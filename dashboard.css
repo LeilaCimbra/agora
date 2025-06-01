@@ -1,0 +1,221 @@
+
+/* Estilo padrão para todas as páginas*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%; /* aqui mudei o tamanho da fonte, a cada 10 px = 1rem pra melhorar a responsividade*/
+  --font-family: "Montserrat", sans-serif;
+  --font-weight-fino:275;
+  --font-weight-light:300;
+  --font-weight-normal:400;
+  --font-weight-medio:500;
+  --font-weight-semi-bold:600;
+  --font-weight-bold:700;
+  --font-weight-extra-bold:800;
+  --color-primary: #390808;
+  --color-secundary:#752237;
+  --color-terciary: #52524F;
+  --background:#D9D9D9;
+}
+html, body {
+  height: 100%;
+  font-family: var(--font-family);
+  overflow: hidden;
+}
+
+/* Estilos para o navegador fixo superior */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  padding-left: 37.833rem;
+  height: 8.45rem;
+}
+header input{
+  width: 42.4rem;
+  height: 4.333rem;
+  border-radius: 1.1rem;
+  border: none;
+  cursor: pointer;
+  color:#390808;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+header input::placeholder{
+  font-family: Montserrat;
+  font-weight: var(--font-weight-normal);
+  font-size: 1.682rem;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-align: start;
+  padding-left: 4rem;
+  background-image: url(assets/icons/lupa.svg);
+  background-repeat: no-repeat;
+  background-position: 1.0rem;
+}
+.profile{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  margin-right: 5rem;
+}
+.user_name {
+  color: #ffffff;
+  background-image: url(assets/icons/seta_para_baixo.svg);
+  background-repeat: no-repeat;
+  background-position: 10rem;
+  padding-right: 5rem;
+  font-weight: var(--font-weight-normal);
+  font-size: 2.6rem;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+}
+.notifications{
+  display:none;
+  position: absolute;
+  background-color: #D9D9D9;
+  border: 1px solid #ccc;
+  padding: 1rem 0;
+  border-radius: 6px;
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);
+  min-width: 17rem;
+  z-index: 100;
+}
+.dropdown_avatar{
+  display: none;
+  position: absolute;
+  background-color: #D9D9D9;
+  border: 1px solid #ccc;
+  padding: 1rem 0;
+  border-radius: 6px;
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);
+  min-width: 17rem;
+  z-index: 100;
+}
+.dropdown_menu{
+  display:none;
+  position: absolute;
+  background-color: #D9D9D9;
+  border: 1px solid #ccc;
+  padding: 1rem 0;
+  border-radius: 6px;
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);
+  min-width: 17rem;
+  z-index: 100;
+}
+.dropdown_wrapper{
+  position: relative;
+  display:inline-block;
+}
+.dropdown_wrapper:hover .dropdown_menu {
+  display: block;
+}
+.dropdown_wrapper:hover .dropdown_avatar {
+  display: block;
+}
+.dropdown_wrapper:hover .notifications {
+  display: block;
+}
+.profile a {
+  display: flex;
+  text-decoration: none;
+  color: #390808;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+  transform-origin: center center;
+  margin-bottom: 0.8rem;
+}
+.dropdown_wrapper a:hover{
+  transform: scale(1.13);
+}
+
+/* Estilos para o menu fixo lateral */
+
+.sidebar {
+  position:fixed; 
+  top: 0;
+  left: 0;
+  width: 34.633rem;
+  height: 100%;
+  background-color:var(--color-primary);
+  color: white;
+  font-weight: var(--font-weight-normal);
+  font-size: 2.164rem;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  border-top-right-radius: 2.7rem;
+  border-bottom-right-radius: 2.7rem;
+  box-shadow: 4.33px -1.08px 8.88px 0px #000000BA;
+}
+.soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-bottom: 6.7rem;
+  margin-top: 1.5rem;
+}
+.soon a {
+  font-family: MADE TOMMY;
+  font-weight: var(--font-weight-extra-bold);
+  font-size: 3.347rem;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  background: linear-gradient(274.35deg, #52524F -27.29%, #FFFFFF 90.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 5px 5px  8px rgba(0, 0, 0, 0.2);
+}
+.link_last a{
+  font-family: Montserrat;
+  font-weight: var(--font-weight-normal);
+  font-size: 1.675rem;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+ul {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+ul li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color:white;
+  margin-left: 2rem;
+  margin-bottom: 2.7rem;
+  transition: transform 0.3s ease; 
+  transform-origin: center center;
+  height: 4rem;
+  padding: 1rem 2rem;
+}
+li:hover {
+  transform: scale(0.9);
+}
+.edge {
+  width: 30rem;
+  background-color: #FFFFFF;
+  height: 1px;
+  margin-top: 6.6rem;
+  margin-left: 2.3rem;
+}
+ul:last-child{
+  padding-top: 4.3rem;
+}
+.sidebar img {
+  margin-right: 0.8rem;
+}

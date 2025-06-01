@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="excluir_usuario.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/made-tommy-soft-outline " rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Excluir Usuário</title>
+</head>
+
+  <!-- A página HOME é a principal do sistema. Dela todas as outras se ramificam -->
+<body>
+
+  <!--
+  O Header é o menu de navegação superior fixo para todas as páginas.
+  Coloquei um dropdown em algumas partes, mas futuramente a interações serão em JS. 
+  -->
+
+  <header>
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder= "Pesquise seu livro aqui"
+    >
+    <div class="profile">
+        <div class="dropdown_wrapper">
+          <div>
+          <img
+          src="assets/icons/sino.svg" alt="Ícone de sino">
+          </div>
+          <div class="notifications">
+            <a 
+            href="#notificacoes">
+            Você tem 2 notifications
+            </a>
+          </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <img 
+        class="avatar"
+        src="assets/image/carlos.svg" alt="Foto do usuário">
+        <div class="dropdown_avatar">
+        <a href="#alterarAvatar">Alterar Avatar</a>
+        </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <span 
+        class="user_name">
+        Carlos
+        </span>
+        <div 
+          class="dropdown_menu">
+          <a href="#editarPerfil">Editar Perfil</a>
+          <a href="#configuracoes">Configurações</a>
+          <a href="#sair">Sair</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 
+    O Sidebar é o menu de navegação lateral que se repete em todas as páginas. 
+    Usei action nos forms e <a> estilizado pra vincular páginas, por enquanto. 
+  -->
+  <section class="sidebar">
+    <div class="soon">
+    <img src="assets/image/logo-sidebar.svg" alt="Logo Ágora">
+    <a href="dashboard.html">ÁGORA</a>
+  </div>
+  <ul>
+    <li>
+      <a href="consultar_livros.html">
+        <img 
+        src="assets/icons/consulta.svg" 
+        alt="Ícone de Lupa">
+        Consultar Livro
+      </a>
+    </li>
+    <li> 
+      <a href="emprestimo.html">
+        <img 
+        src="assets/icons/emprestimo.svg" 
+        alt="Ícone de Capelo ">
+        Empréstimo
+      </a>
+    </li>
+    <li> 
+      <a href="gerenciamento.html">
+        <img 
+        src="assets/icons/gerenciamento.svg" alt="Ícone de Gerenciamento ">
+        Gerenciamento de Livros
+      </a>
+    </li>
+    <li> 
+      <a href="cadastro.html">
+        <img 
+      src="assets/icons/cadastro.svg" 
+      alt="Ícone de usuário">
+      Cadastrar Usuários
+      </a>
+    </li>
+    <li>
+      <a href="devolucao.html">
+        <img 
+        src="assets/icons/devolucao.svg" 
+        alt="Ícone de devolução">
+        Devolução
+      </a>
+    </li>
+    <li>
+      <a href="consulta_usuario.html">
+        <img 
+        src="assets/icons/consulta-usuario.svg" alt="Ícone de consulta de usuário">
+        Consultar Usuário
+      </a>
+    </li>
+    <li>
+      <a href="relatorios.html">
+        <img 
+        src="assets/icons/relatorios.svg" 
+        alt="Ícone de relatórios">
+        Relatórios
+      </a>
+    </li>
+  </ul>
+  <div class="edge"></div>
+  <ul class="link_last">
+    <li>
+      <a href="configuracao.html">
+        <img 
+        src="assets/icons/configuracao.svg" 
+        alt="Ícone de configuração">
+        Configurações
+      </a>
+    </li>
+    <li>
+      <a href="suporte.html">
+        <img 
+        src="assets/icons/suporte.svg" 
+        alt="Ícone de suporte">
+        Suporte
+      </a>
+    </li>
+    <li>
+      <a href="sair.html">
+        <img 
+        src="assets/icons/sair.svg" 
+        alt="ícone de saida">
+        Sair
+      </a>
+    </li>
+  </ul>
+  </section>
+
+  <!-- Seção principal -->
+  <main>
+    <div class="back" >
+      <a 
+      href="cadastro.html">
+      <img src="assets/icons/seta_voltar.svg" alt="Imagem de seta para voltar a tela anterior">
+      Voltar
+      </a>
+    </div>
+
+    <form action="dashboard.html">
+      <div 
+      class="form_header">
+        <h1>
+          Remover um Usuário
+        </h1>
+        <div class="borda"></div>
+      </div>
+      <div class="profile_container">
+        <div class="profile_wrapper">
+          <div class="profile_data">
+            <label for="nome"> Digite o nome do ususário</label>
+            <input 
+            type="text" 
+            name="nome" 
+            placeholder="Nome do usuário que queira remover" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="user_container">
+
+        <div id="valentina" class="user_wrapper">
+          <div class="user">
+            <img src="assets/image/valentina.svg" alt="Imagem de uma mulher">
+            <span> ID:12345</span>
+          </div>
+          <div class="user_info">
+            <h2>Valentiva Ferreira de Souza</h2>
+            <p>Administradora</p>
+          </div>
+          <div class="user_remove">
+            <p>Deseja Remover <br> esse usuário?</p>
+            <button 
+            type="button">
+            Remover Agora 
+            <img src="assets/icons/lixeira.svg" alt="Imagem de uma lixeira"></button>
+          </div>
+        </div>
+
+        <div id="alan" class="user_wrapper">
+          <div class="user">
+            <img src="assets/image/alan.svg" alt="Imagem de uma homem">
+            <span> ID:54321</span>
+          </div>
+          <div class="user_info">
+            <h2>Alan Moreira Duarte</h2>
+            <p>Usuário</p>
+          </div>
+          <div class="user_remove">
+            <p>Deseja Remover <br> esse usuário?</p>
+            <button 
+            type="button">
+            Remover Agora 
+            <img src="assets/icons/lixeira.svg" alt="Imagem de um lixeira"></button>
+          </div>
+        </div>
+
+        <div id="amanda" class="user_wrapper">
+          <div class="user">
+            <img src="assets/image/amanda.svg" alt="Imagem de uma mulher">
+            <span> ID:44351</span>
+          </div>
+          <div class="user_info">
+            <h2>Amanda Bastos Silva</h2>
+            <p>Usuária</p>
+          </div>
+          <div class="user_remove">
+            <p>Deseja Remover <br> esse usuário?</p>
+            <button 
+            type="button">
+            Remover Agora 
+            <img src="assets/icons/lixeira.svg" alt="Imagem de uma lixeira"></button>
+          </div>
+        </div>
+
+        <div id="carlos_eduardo" class="user_wrapper">
+          <div class="user">
+            <img src="assets/image/carlos_eduardo.svg" alt="Imagem de um homem">
+            <span> ID:11255</span>
+          </div>
+          <div class="user_info">
+            <h2>Carlos Eduardo Moreira</h2>
+            <p>Usuário</p>
+          </div>
+          <div class="user_remove">
+            <p>Deseja Remover <br> esse usuário?</p>
+            <button 
+            type="button">
+            Remover Agora 
+            <img src="assets/icons/lixeira.svg" alt="Imagem de uma lixeira"></button>
+          </div>
+        </div>
+      </div>
+      
+    </form>
+  </main>
+  
+</body>
+</html>

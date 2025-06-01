@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/made-tommy-soft-outline " rel="stylesheet">
+  <title>Home</title>
+</head>
+
+  <!-- A página HOME é a principal do sistema. Dela todas as outras se ramificam -->
+<body>
+
+  <!--
+  O Header é o menu de navegação superior fixo para todas as páginas.
+  Coloquei um dropdown em algumas partes, mas futuramente a interações serão em JS. 
+  -->
+
+  <header>
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder= "Pesquise seu livro aqui"
+    >
+    <div class="profile">
+        <div class="dropdown_wrapper">
+          <div>
+          <img
+          src="assets/icons/sino.svg" alt="Ícone de sino">
+          </div>
+          <div class="notifications">
+            <a 
+            href="#notificacoes">
+            Você tem 2 notifications
+            </a>
+          </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <img 
+        class="avatar"
+        src="assets/image/carlos.svg" alt="Foto do usuário">
+        <div class="dropdown_avatar">
+        <a href="#alterarAvatar">Alterar Avatar</a>
+        </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <span 
+        class="user_name">
+        Carlos
+        </span>
+        <div 
+          class="dropdown_menu">
+          <a href="#editarPerfil">Editar Perfil</a>
+          <a href="#configuracoes">Configurações</a>
+          <a href="#sair">Sair</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 
+    O Sidebar é o menu de navegação lateral que se repete em todas as páginas. 
+    Usei action nos forms e <a> estilizado pra vincular páginas, por enquanto. 
+  -->
+  <section class="sidebar">
+    <div class="soon">
+    <img src="assets/image/logo-sidebar.svg" alt="Logo Ágora">
+    <a href="dashboard.html">ÁGORA</a>
+  </div>
+  <ul>
+    <li>
+      <a href="consultar_livros.html">
+        <img 
+        src="assets/icons/consulta.svg" 
+        alt="Ícone de Lupa">
+        Consultar Livro
+      </a>
+    </li>
+    <li> 
+      <a href="emprestimo.html">
+        <img 
+        src="assets/icons/emprestimo.svg" 
+        alt="Ícone de Capelo ">
+        Empréstimo
+      </a>
+    </li>
+    <li> 
+      <a href="gerenciamento.html">
+        <img 
+        src="assets/icons/gerenciamento.svg" alt="Ícone de Gerenciamento ">
+        Gerenciamento de Livros
+      </a>
+    </li>
+    <li> 
+      <a href="cadastro.html">
+        <img 
+      src="assets/icons/cadastro.svg" 
+      alt="Ícone de usuário">
+      Cadastrar Usuários
+      </a>
+    </li>
+    <li>
+      <a href="devolucao.html">
+        <img 
+        src="assets/icons/devolucao.svg" 
+        alt="Ícone de devolução">
+        Devolução
+      </a>
+    </li>
+    <li>
+      <a href="consulta_usuario.html">
+        <img 
+        src="assets/icons/consulta-usuario.svg" alt="Ícone de consulta de usuário">
+        Consultar Usuário
+      </a>
+    </li>
+    <li>
+      <a href="relatorios.html">
+        <img 
+        src="assets/icons/relatorios.svg" 
+        alt="Ícone de relatórios">
+        Relatórios
+      </a>
+    </li>
+  </ul>
+  <div class="edge"></div>
+  <ul class="link_last">
+    <li>
+      <a href="configuracao.html">
+        <img 
+        src="assets/icons/configuracao.svg" 
+        alt="Ícone de configuração">
+        Configurações
+      </a>
+    </li>
+    <li>
+      <a href="suporte.html">
+        <img 
+        src="assets/icons/suporte.svg" 
+        alt="Ícone de suporte">
+        Suporte
+      </a>
+    </li>
+    <li>
+      <a href="sair.html">
+        <img 
+        src="assets/icons/sair.svg" 
+        alt="ícone de saida">
+        Sair
+      </a>
+    </li>
+  </ul>
+  </section>
+
+  <main>
+
+    <div class="books_container">
+      <div class="books_wrapper">
+        <div class="section_header">
+            <h2>Recomendados</h2>
+            <button>Todos</button>
+        </div>
+        <div class="recommended">
+          <div class="books_recommended">
+              <div class="book1">
+                <img src="assets/image/cinquenta_tons.svg" alt=" Livro Cinquenta Tons de Cinza">
+              </div>
+              <div class="book_inform">
+                <p>Cinquenta Tons de Cinza</p>
+                <span>E L James</span>
+              </div>
+          </div>
+          <div class="books_recommended">
+              <div class="book2">
+                <img src="assets/image/memorias_postumas.svg" alt=" Livro Memórias Póstumas de Brás Cubas">
+              </div>
+              <div class="book_inform">
+                <p>Memórias Póstumas...</p>
+                <span>Machado de Assis</span>
+              </div>
+          </div>
+          <div class="books_recommended">
+              <div class="book3">
+                <img src="assets/image/romeu_e_julieta.svg" alt=" Livro Romeu e Julieta">
+              </div>
+              <div class="book_inform">
+                <p>Romeu e Julieta</p>
+                <span>William Shakespeare</span>
+              </div>
+          </div>
+          <div class="books_recommended">
+              <div class="book4">
+                <img src="assets/image/a_guerra.svg" alt=" Livro A Guerra dos Tronos">
+              </div>
+              <div class="book_inform">
+                <p>A Guerra dos Tronos</p>
+                <span>George R. R. Martin</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="books_wrapper">
+        <div class="categories">
+          <div class="section_header">
+            <h2>Categorias</h2>
+            <button>Todos</button>
+          </div>
+          <div class="book_genres">
+            <button type="button">Comédia</button>
+            <button type="button">Romance</button>
+            <button type="button">Educação</button>
+            <button type="button">Drama</button>
+            <button type="button">Poesia</button>
+            <button type="button">História</button>
+          </div>
+          <div class="books_categies">
+
+            <div class="books_card">
+                <img 
+                  src="assets/image/capa_livro_recortada.png" 
+                  alt=" Livro Cinquenta Tons de Cinza">
+                
+                
+                <p>Cinquenta Tons de Cinza</p>
+                <span>E L James</span>
+                
+            </div>
+
+            <div class="books_card">
+                <img 
+                  src="assets/image/Memorias.png" 
+                  alt=" Livro Memórias Póstumas de Brás Cubas">
+
+                
+                <p>Memórias Póstumas...</p>
+                <span>Machado de Assis</span>
+                
+            </div>
+            <div class="books_card">
+                <img 
+                  src="assets/image/image 4.png" 
+                  alt=" Livro Romeu e Julieta">
+
+                
+                <p>Romeu e Julieta</p>
+                <span>William Shakespeare</span>
+                
+            </div>
+            <div class="books_card">
+                <img 
+                  src="assets/image/image 5.png" 
+                  alt=" Livro A Guerra dos Tronos">
+
+                <p>A Guerra dos Tronos</p>
+                <span>George R. R. Martin</span>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <aside>
+      <div class="book5">
+          <img src="assets/image/senhor_dos_aneis.svg" alt=" Livro O Senhor dos Anéis">
+      </div>
+      <h2>O Senhor dos Anéis</h2>
+      <h3>J. R. R. Tolkien</h3>
+      <div class="assessment_wrapper">
+        <div class="assessment">
+          <img src="assets/icons/estrela.svg" alt="Imagem de Estrela">
+          <img src="assets/icons/estrela.svg" alt="Imagem de Estrela">
+          <img src="assets/icons/estrela.svg" alt="Imagem de Estrela">
+          <img src="assets/icons/estrela.svg" alt="Imagem de Estrela">
+          <img src="assets/icons/meia_estrela.svg" alt="">
+          <span>4.9</span>
+        </div>
+        <div class="metrics">
+          <div class="info_box">
+            <strong>
+              1280
+            </strong>
+            <span>
+              Páginas
+            </span>
+          </div>
+          <div class="info_box">
+            <strong>
+              452
+            </strong>
+            <span>
+              Avaliações
+            </span>
+          </div>
+          <div class="info_box">
+            <strong>
+              115
+            </strong>
+            <span>
+              Análise
+            </span>
+          </div>
+        </div>
+        <p>
+        Nos tempos antigos da Terra-média, mais especificamente na Segunda Era, os ferreiros-élficos de Eregion, liderados por Celebrimbor, criaram os Anéis de Poder. Mas o que eles não sabiam, era que em Mordor, Sauron, o Senhor das Trevas, forjou o Um Anel, enchendo-o com seu próprio poder para que pudesse governar todos os outros...
+        </p>
+        <div class="bnt_reserve">
+          <a 
+          href="emprestimo.html" 
+          >
+          Reserve Agora 
+          <img src="assets/icons/livro.svg" alt="Imagem de um Livro aberto">
+          </a>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
