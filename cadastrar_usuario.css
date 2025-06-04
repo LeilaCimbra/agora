@@ -1,4 +1,6 @@
-
+.pagina_cadastro .sidebar a[href="cadastro.html"]{
+  background-color: var(--color-terciary);
+}
 main{
   height: 100vh;
   margin: 0 auto;
@@ -84,7 +86,8 @@ form {
   color: #434341;
 }
 .profile_data input::placeholder {
-  font-weight: var(--font-weight-fino);
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
   font-size: 2.4rem;
   line-height: 100%;
   letter-spacing: -0.05em;
@@ -118,7 +121,7 @@ form {
   display: flex;
   justify-content: flex-end;
 }
-button {
+.btn {
   align-items: end;
   width: 13.4rem;
   height: 3.8rem;
@@ -135,7 +138,7 @@ button {
   color: #FFFFFF;
 
 }
-button:hover{
+.btn:hover{
   background-color: #9e9e9a;
   color:#390808;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);

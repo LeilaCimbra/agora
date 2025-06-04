@@ -3,9 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="relatorios.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/made-tommy-soft-outline " rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Excluir Usuário</title>
 </head>
-<body>
-  <h1> RELATÓRIOS </h1>
+
+  <!-- A página HOME é a principal do sistema. Dela todas as outras se ramificam -->
+<body class="pagina_relatorios">
+
+  <!--
+  O Header é o menu de navegação superior fixo para todas as páginas.
+  Coloquei um dropdown em algumas partes, mas futuramente a interações serão em JS. 
+  -->
+
+  <header>
+    <div class="search-container">
+      <form action="consultar_livros.html">
+        <button 
+        class="search_btn"
+        type="submit">
+          <img src="assets/icons/lupa.svg" alt="">
+        </button>
+        <input 
+        class="form_input"
+        type="text" 
+        placeholder="Pesquise aseu livro aqui">
+      </form>
+    </div>
+    <div class="profile">
+        <div class="dropdown_wrapper">
+          <div>
+          <img
+          src="assets/icons/sino.svg" alt="Ícone de sino">
+          </div>
+          <div class="notifications">
+            <a 
+            href="#notificacoes">
+            Você tem 2 notifications
+            </a>
+          </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <img 
+        class="avatar"
+        src="assets/image/carlos.svg" alt="Foto do usuário">
+        <div class="dropdown_avatar">
+        <a href="#alterarAvatar">Alterar Avatar</a>
+        </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <span 
+        class="user_name">
+        Carlos
+        </span>
+        <div 
+          class="dropdown_menu">
+          <a href="#editarPerfil">Editar Perfil</a>
+          <a href="#configuracoes">Configurações</a>
+          <a href="#sair">Sair</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 
+    O Sidebar é o menu de navegação lateral que se repete em todas as páginas. 
+    Usei action nos forms e <a> estilizado pra vincular páginas, por enquanto. 
+  -->
+  <section class="sidebar">
+    <div class="soon">
+    <img src="assets/image/logo-sidebar.svg" alt="Logo Ágora">
+    <a href="dashboard.html">ÁGORA</a>
+  </div>
+  <ul>
+    <li> 
+      <a href="emprestimo.html">
+        <img 
+        src="assets/icons/emprestimo.svg" 
+        alt="Ícone de Capelo ">
+        Empréstimo
+      </a>
+    </li>
+    <li> 
+      <a href="gerenciamento.html">
+        <img 
+        src="assets/icons/gerenciamento.svg" alt="Ícone de Gerenciamento ">
+        Gerenciamento de Livros
+      </a>
+    </li>
+    <li> 
+      <a href="cadastro.html">
+        <img 
+      src="assets/icons/cadastro.svg" 
+      alt="Ícone de usuário">
+      Cadastrar Usuários
+      </a>
+    </li>
+    <li>
+      <a href="consulta_usuario.html">
+        <img 
+        src="assets/icons/consulta-usuario.svg" alt="Ícone de consulta de usuário">
+        Consultar Usuário
+      </a>
+    </li>
+    <li>
+      <a href="relatorios.html">
+        <img 
+        src="assets/icons/relatorios.svg" 
+        alt="Ícone de relatórios">
+        Relatórios
+      </a>
+    </li>
+  </ul>
+  <div class="edge"></div>
+  <ul class="link_last">
+    <li>
+      <a href="configuracao.html">
+        <img 
+        src="assets/icons/configuracao.svg" 
+        alt="Ícone de configuração">
+        Configurações
+      </a>
+    </li>
+    <li>
+      <a href="suporte.html">
+        <img 
+        src="assets/icons/suporte.svg" 
+        alt="Ícone de suporte">
+        Suporte
+      </a>
+    </li>
+    <li>
+      <a href="sair.html">
+        <img 
+        src="assets/icons/sair.svg" 
+        alt="ícone de saida">
+        Sair
+      </a>
+    </li>
+  </ul>
+  </section>
+
+  <!-- Seção principal -->
+  <main>
+    <div class="back" >
+      <a 
+      href="cadastro.html">
+      <img src="assets/icons/seta_voltar.svg" alt="Imagem de seta para voltar a tela anterior">
+      Voltar
+      </a>
+    </div>
+
+    <section class="title_container">
+      <div 
+      class="title">
+        <h1>
+          Relatório de Livros
+        </h1>
+        <div class="borda"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shedulle">
+        <div class="schedule-user">
+          Usuário
+        </div>
+        <div class="schedule-user">
+          Segunda<br>
+          <span>09/06</span>
+        </div>
+        <div class="schedule-user">
+          Terça<br>
+          <span>10/06</span>
+        </div>
+        <div class="schedule-user">
+          Quarta<br>
+          <span>11/06</span>
+        </div>
+        <div class="schedule-user">
+          Quinta<br>
+          <span>12/06</span>
+        </div>
+        <div class="schedule-user">
+          Sexta<br>
+          <span>13/06</span>
+        </div>
+        <div class="schedule-user">
+          Sábado<br>
+          <span>14/06</span>
+        </div>
+        <div class="schedule-user">
+          Domingo<br>
+          <span>15/06</span>
+        </div>
+      </div>
+
+      <div class="loan">
+        <div class="loan_profile">
+          <img src="assets/image/amanda.svg" alt="Imagem de um usuário">
+          <span class="loan_id">ID:44251</span>
+        </div>
+        <div class="amanda_info">
+          <h2>Herry Potter e a Pedra Filosofal</h2>
+          <div class="loan_status">
+            <span>No prazo</span>
+            <span>Empréstimo:10/06</span>
+            <span>Entrega prevista: 14/06</span>
+          </div>
+        </div>
+      </div>
+      <div class="loan">
+        <div class="loan_profile">
+          <img src="assets/image/carlos_eduardo.svg" alt="Imagem de um usuário">
+          <span class="loan_id">ID:54321</span>
+        </div>
+        <div class="carlos_info">
+          <h2>A Gerra dos Tronos</h2>
+          <div class="loan_status">
+            <span>No prazo</span>
+            <span>Empréstimo:09/06</span>
+            <span>Entrega prevista: 13/06</span>
+          </div>
+        </div>
+      </div>
+      <div class="loan">
+        <div class="loan_profile">
+          <img src="assets/image/valentina.svg" alt="Imagem de um usuário">
+          <span class="loan_id">ID:12345</span>
+        </div>
+        <div class="valentina_info">
+          <h2>O Senhor dos Anéis</h2>
+          <div class="loan_status">
+            <span>Atrasado</span>
+            <span>Empréstimo:12/06</span>
+            <span>Entrega prevista: 14/06</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+    
+    
+  </main>
+  
 </body>
 </html>

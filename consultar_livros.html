@@ -3,9 +3,299 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="consultar_livros.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/made-tommy-soft-outline " rel="stylesheet">
+  <title>Consulta de Livros</title>
 </head>
-<body>
-  <h1> CONSULTA DE LIVROS </h1>
+
+  <!-- A página HOME é a principal do sistema. Dela todas as outras se ramificam -->
+<body class="consultar_livros">
+
+  <!--
+  O Header é o menu de navegação superior fixo para todas as páginas.
+  Coloquei um dropdown em algumas partes, mas futuramente a interações serão em JS. 
+  -->
+
+  <header>
+    <div class="search-container">
+      <form action="consultar_livros.html">
+        <button 
+        class="search_btn"
+        type="submit">
+          <img src="assets/icons/lupa.svg" alt="">
+        </button>
+        <input 
+        class="form_input"
+        type="text" 
+        placeholder="Pesquise aseu livro aqui">
+      </form>
+    </div>
+    <div class="profile">
+        <div class="dropdown_wrapper">
+          <div>
+          <img
+          src="assets/icons/sino.svg" alt="Ícone de sino">
+          </div>
+          <div class="notifications">
+            <a 
+            href="#notificacoes">
+            Você tem 2 notifications
+            </a>
+          </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <img 
+        class="avatar"
+        src="assets/image/carlos.svg" alt="Foto do usuário">
+        <div class="dropdown_avatar">
+        <a href="#alterarAvatar">Alterar Avatar</a>
+        </div>
+      </div>
+      <div class="dropdown_wrapper">
+        <span 
+        class="user_name">
+        Carlos
+        </span>
+        <div 
+          class="dropdown_menu">
+          <a href="#editarPerfil">Editar Perfil</a>
+          <a href="#configuracoes">Configurações</a>
+          <a href="#sair">Sair</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- 
+    O Sidebar é o menu de navegação lateral que se repete em todas as páginas. 
+    Usei action nos forms e <a> estilizado pra vincular páginas, por enquanto. 
+  -->
+  <section class="sidebar">
+    <div class="soon">
+    <img src="assets/image/logo-sidebar.svg" alt="Logo Ágora">
+    <a href="dashboard.html">ÁGORA</a>
+  </div>
+  <ul>
+    <li> 
+      <a href="emprestimo.html">
+        <img 
+        src="assets/icons/emprestimo.svg" 
+        alt="Ícone de Capelo ">
+        Empréstimo
+      </a>
+    </li>
+    <li> 
+      <a href="gerenciamento.html">
+        <img 
+        src="assets/icons/gerenciamento.svg" alt="Ícone de Gerenciamento ">
+        Gerenciamento de Livros
+      </a>
+    </li>
+    <li> 
+      <a href="cadastro.html">
+        <img 
+      src="assets/icons/cadastro.svg" 
+      alt="Ícone de usuário">
+      Cadastrar Usuários
+      </a>
+    </li>
+    <li>
+      <a href="consulta_usuario.html">
+        <img 
+        src="assets/icons/consulta-usuario.svg" alt="Ícone de consulta de usuário">
+        Consultar Usuário
+      </a>
+    </li>
+    <li>
+      <a href="relatorios.html">
+        <img 
+        src="assets/icons/relatorios.svg" 
+        alt="Ícone de relatórios">
+        Relatórios
+      </a>
+    </li>
+  </ul>
+  <div class="edge"></div>
+  <ul class="link_last">
+    <li>
+      <a href="configuracao.html">
+        <img 
+        src="assets/icons/configuracao.svg" 
+        alt="Ícone de configuração">
+        Configurações
+      </a>
+    </li>
+    <li>
+      <a href="suporte.html">
+        <img 
+        src="assets/icons/suporte.svg" 
+        alt="Ícone de suporte">
+        Suporte
+      </a>
+    </li>
+    <li>
+      <a href="sair.html">
+        <img 
+        src="assets/icons/sair.svg" 
+        alt="ícone de saida">
+        Sair
+      </a>
+    </li>
+  </ul>
+  </section>
+
+  <main>
+
+    <div class="books_container">
+      <div class="books_wrapper">
+        <div class="section_header">
+            <h2>Interessantes para você</h2>
+            <button>Todos</button>
+        </div>
+        <div class="all_books">
+          <div class="all">
+              <div class="book1">
+                <img src="assets/image/herry_potter_camara.svg" alt=" Livro do Harry Potter">
+              </div>
+              <div class="book_inform">
+                <p>Harry Potter e a Câm...</p>
+                <span>J. K. Rowling</span>
+              </div>
+          </div>
+          <div class="all">
+              <div class="book2">
+                <img src="assets/image/herry_potter_prisioneiro.svg" alt=" Livro do Harry Potter">
+              </div>
+              <div class="book_inform">
+                <p>Harry Potter e o Prisione...</p>
+                <span>J. K. Rowling</span>
+              </div>
+          </div>
+          <div class="all">
+              <div class="book3">
+                <img src="assets/image/herry_potter_calice.svg" alt=" Livro do Harry Potter">
+              </div>
+              <div class="book_inform">
+                <p>Harry Potter e o cálice...</p>
+                <span>J. K. Rowling</span>
+              </div>
+          </div>
+          <div class="all">
+              <div class="book4">
+                <img src="assets/image/herry_potter_ordem.svg" alt=" Livro do Harry Potter">
+              </div>
+              <div class="book_inform">
+                <p>Harry Potter e a Ordem...</p>
+                <span>J. K. Rowling</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="books_wrapper">
+        <div class="section_header">
+            <h2>Interessantes para você</h2>
+            <button>Todos</button>
+        </div>
+        <div class="all_books">
+          <div class="all">
+              <div class="book1">
+                <img src="assets/image/herry_potter_camara_secreta.svg" alt=" Livro do Harry Potter">
+              </div>
+              <div class="book_inform">
+                <p>Harry Potter e a Câm...</p>
+                <span>J. K. Rowling</span>
+              </div>
+          </div>
+          <div class="all">
+              <div class="book2">
+                <img src="assets/image/herry_potter_prisioneiro_azkaban.svg" alt=" Livro do Harry Potter">
+              </div>
+              <div class="book_inform">
+                <p>Harry Potter e o Prisione...</p>
+                <span>J. K. Rowling</span>
+              </div>
+          </div>
+          <div class="all">
+              <div class="book3">
+                <img src="assets/image/herry_potter_calice_de_fogo.svg" alt=" Livro do Harry Potter">
+              </div>
+              <div class="book_inform">
+                <p>Harry Potter e o cálice...</p>
+                <span>J. K. Rowling</span>
+              </div>
+          </div>
+          <div class="all">
+              <div class="book4">
+                <img src="assets/image/herry_potter_ordem_secreta.svg" alt=" Livro do Harry Potter">
+              </div>
+              <div class="book_inform">
+                <p>Harry Potter e a Ordem...</p>
+                <span>J. K. Rowling</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="book9">
+          <img src="assets/image/herry_potter_pedra.svg" alt=" Livro de Herry Potter">
+      </div>
+      <h2>Harry Potter e a Pedra Filosofal</h2>
+      <h3>J. K. Rowling</h3>
+      <div class="assessment_wrapper">
+        <div class="assessment">
+          <img src="assets/icons/estrela.svg" alt="Imagem de Estrela">
+          <img src="assets/icons/estrela.svg" alt="Imagem de Estrela">
+          <img src="assets/icons/estrela.svg" alt="Imagem de Estrela">
+          <img src="assets/icons/estrela.svg" alt="Imagem de Estrela">
+          <img src="assets/icons/meia_estrela.svg" alt="">
+          <span>4.9</span>
+        </div>
+        <div class="metrics">
+          <div class="info_box">
+            <strong>
+              223
+            </strong>
+            <span>
+              Páginas
+            </span>
+          </div>
+          <div class="info_box">
+            <strong>
+              320
+            </strong>
+            <span>
+              Avaliações
+            </span>
+          </div>
+          <div class="info_box">
+            <strong>
+              85
+            </strong>
+            <span>
+              Análise
+            </span>
+          </div>
+        </div>
+        <p>
+        Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho...
+        </p>
+        <div class="bnt_reserve">
+          <a 
+          href="emprestimo.html" 
+          >
+          Reserve Agora 
+          <img src="assets/icons/livro.svg" alt="Imagem de um Livro aberto">
+          </a>
+        </div>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>

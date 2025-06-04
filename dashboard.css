@@ -37,27 +37,39 @@ header {
   padding-left: 37.833rem;
   height: 8.45rem;
 }
-header input{
+.search-container form{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 42.4rem;
   height: 4.333rem;
+  background-color: #FFFFFF;
   border-radius: 1.1rem;
   border: none;
   cursor: pointer;
-  color:#390808;
   font-size: 1.6rem;
   padding-left: 1rem;
 }
-header input::placeholder{
+.form_input{
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
   font-family: Montserrat;
   font-weight: var(--font-weight-normal);
   font-size: 1.682rem;
   line-height: 100%;
   letter-spacing: -0.04em;
-  text-align: start;
-  padding-left: 4rem;
-  background-image: url(assets/icons/lupa.svg);
-  background-repeat: no-repeat;
-  background-position: 1.0rem;
+  color:#52524F;
+}
+.search_btn {
+  all: unset; 
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
 }
 .profile{
   display: flex;
@@ -210,7 +222,7 @@ li:hover {
   width: 30rem;
   background-color: #FFFFFF;
   height: 1px;
-  margin-top: 6.6rem;
+  margin-top: 12rem;
   margin-left: 2.3rem;
 }
 ul:last-child{

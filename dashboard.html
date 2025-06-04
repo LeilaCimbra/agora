@@ -21,11 +21,19 @@
   -->
 
   <header>
-    <input 
-    type="text" 
-    id="searchInput" 
-    placeholder= "Pesquise seu livro aqui"
-    >
+    <div class="search-container">
+      <form action="consultar_livros.html">
+        <button 
+        class="search_btn"
+        type="submit">
+          <img src="assets/icons/lupa.svg" alt="">
+        </button>
+        <input 
+        class="form_input"
+        type="text" 
+        placeholder="Pesquise aseu livro aqui">
+      </form>
+    </div>
     <div class="profile">
         <div class="dropdown_wrapper">
           <div>
@@ -72,14 +80,6 @@
     <a href="dashboard.html">ÁGORA</a>
   </div>
   <ul>
-    <li>
-      <a href="consultar_livros.html">
-        <img 
-        src="assets/icons/consulta.svg" 
-        alt="Ícone de Lupa">
-        Consultar Livro
-      </a>
-    </li>
     <li> 
       <a href="emprestimo.html">
         <img 
@@ -101,14 +101,6 @@
       src="assets/icons/cadastro.svg" 
       alt="Ícone de usuário">
       Cadastrar Usuários
-      </a>
-    </li>
-    <li>
-      <a href="devolucao.html">
-        <img 
-        src="assets/icons/devolucao.svg" 
-        alt="Ícone de devolução">
-        Devolução
       </a>
     </li>
     <li>

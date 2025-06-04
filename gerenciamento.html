@@ -15,12 +15,21 @@
   <title>Gerenciamento de Livros</title>
 </head>
 <body class="pagina_gerenciamento">
+
   <header>
-    <input 
-    type="text" 
-    id="searchInput" 
-    placeholder= "Pesquise seu livro aqui"
-    >
+    <div class="search-container">
+      <form action="consultar_livros.html">
+        <button 
+        class="search_btn"
+        type="submit">
+          <img src="assets/icons/lupa.svg" alt="">
+        </button>
+        <input 
+        class="form_input"
+        type="text" 
+        placeholder="Pesquise aseu livro aqui">
+      </form>
+    </div>
     <div class="profile">
         <div class="dropdown_wrapper">
           <div>
@@ -67,14 +76,6 @@
     <a href="dashboard.html">ÁGORA</a>
   </div>
   <ul>
-    <li>
-      <a href="consultar_livros.html">
-        <img 
-        src="assets/icons/consulta.svg" 
-        alt="Ícone de Lupa">
-        Consultar Livro
-      </a>
-    </li>
     <li> 
       <a href="emprestimo.html">
         <img 
@@ -96,14 +97,6 @@
       src="assets/icons/cadastro.svg" 
       alt="Ícone de usuário">
       Cadastrar Usuários
-      </a>
-    </li>
-    <li>
-      <a href="devolucao.html">
-        <img 
-        src="assets/icons/devolucao.svg" 
-        alt="Ícone de devolução">
-        Devolução
       </a>
     </li>
     <li>
@@ -152,23 +145,38 @@
   </section>
 
   <main>
-    <section class="title_page">
-      <h1>Gerenciamento de Livros</h1>
-    </section>
-    <div class="register">
+
+    <div class="back" >
+      <a 
+      href="dashboard.html">
+      <img src="assets/icons/seta_voltar.svg" alt="Imagem de seta para voltar a tela anterior">
+      Voltar
+      </a>
+    </div>
+
+    <div 
+      class="form_header">
+        <h1>
+          Cadastre um Livro
+        </h1>
+        <div class="borda"></div>
+    </div>
+
+    
+    <section class="register">
       <a 
         class="capa_register"
         href="cadastrar_livros.html">
         Cadastrar um Livro
       </a>
-    </div>
-    <div class="remove">
+    </section>
+    <section class="remove">
       <a 
         class="capa_remove"
         href="remover_livros.html">
         Remover um Livro
       </a>
-    </div>
+    </section>
     
   </main>
 </body>
