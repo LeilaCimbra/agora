@@ -1,0 +1,179 @@
+.pagina_consulta .sidebar a[href="consulta_usuario.html"]{
+  background-color: var(--color-terciary);
+}
+main{
+  height: 100vh;
+  margin: 0 auto;
+  padding-left: 38rem;
+  background-color:#E9EDF0;
+}
+.back {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 88.4rem;
+  height: 4rem;
+}
+.back a {
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.6rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+}
+form {
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  
+}
+.form_header {
+  max-width: 88.4rem;
+}
+.form_header h1{
+  font-weight: var(--font-weight-bold);
+  font-size: 3.9rem;
+  line-height: 100%;
+  letter-spacing: -0.05;
+  color:var(--color-primary);
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.borda {
+  width: 100%;
+  height: 1px;
+  background-color: #390808;
+}
+
+.input_container{
+  display: flex;
+  flex-direction: column;
+  padding : 5rem 1rem 3rem;
+}
+.input_container label {
+  font-weight: var(--font-weight-fino);
+  font-size: 2.4rem;
+  letter-spacing: -0.05em;
+  color: #6c6c6b;
+  padding-bottom: 0.5rem;
+}
+.card_input {
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  width: 51.7rem;
+  height: 4.6rem;
+}
+
+.input_container input {
+  width: 40rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #434341;
+}
+.input_container input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--font-weight-fino);
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #aeaead;
+}
+.card_id {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.card_id button {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.card_btn {
+  display: flex;
+  gap: 2rem;
+  margin-left: 5rem;
+}
+.card_btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #390808;
+  width: 16rem;
+  height: 3.1rem;
+  border-radius: 15rem;
+}
+.btn_administrador, .btn_usuario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 3.1rem;
+  border-radius: 15rem;
+  font-family: Roboto;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.8rem;
+  line-height: 100%;
+  letter-spacing: -0.05rem;
+  cursor: pointer;
+}
+.btn_usuario a {
+  background: linear-gradient(92.29deg, #390808 2.7%, #1B0404 97.21%);
+  color:#FFFFFF;
+}
+.btn_administrador {
+  background: transparent;
+  border:1px solid #390808;
+}
+.card_info {
+  display: flex;
+  justify-content: space-around;
+  width: 70rem;
+  height: 34.8rem;
+  padding: 1rem;
+  margin-top: 7.9rem;
+  border-radius: 20px;
+  background-image: url(assets/image/logo.branca.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:  center;
+}
+.card_img {
+  width: 22rem;
+}
+.card_img h3 {
+  font-weight: var(--font-weight-bold);
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+.card_img p{
+  font-weight: var(--font-weight-normal);
+  font-size: 1.6rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #52524F;
+  margin-bottom: 1rem;
+}
+.card_star {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.card_star span {
+  font-family: Montserrat;
+  font-weight: var(--font-weigth-medio);
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #A2A2A2;
+}
+
