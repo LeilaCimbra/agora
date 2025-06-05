@@ -142,12 +142,6 @@ header {
 .dropdown_wrapper:hover .dropdown_menu {
   display: block;
 }
-.dropdown_wrapper:hover .dropdown_avatar {
-  display: block;
-}
-.dropdown_wrapper:hover .notifications {
-  display: block;
-}
 .dropdown_menu ul {
   padding-bottom: 1.8rem ;
   border-bottom: 1px solid #A2A2A2;
